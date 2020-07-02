@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>What would you like to accomplish today? </h1>
+      <div className="wrapper">
+      <form className="form">
+      <div className="newTodoArea">
+      <label htmlFor="">New Todo</label>
+        <input className="input" type="text" placeholder="Enter New Todo"/>
+        <button className="btn">Add</button>
+      </div>
+      </form>
+      <ul className="todo-list">
+        <li className="todo">Take a Nap</li>
+        <li className="todo">Eat tacos</li>
+        <li className="todo">Wave to a good doggo</li>
+        
+      </ul>
+      </div>
     </div>
   );
 }
