@@ -23,6 +23,9 @@
   border-radius: 5px;
   margin-top: 3rem;
   background-color: #fff;
+  -webkit-box-shadow: 10px 10px 10px -5px rgba(191,7,133,1);
+-moz-box-shadow: 10px 10px 10px -5px rgba(191,7,133,1);
+box-shadow: 10px 10px 10px -5px rgba(191,7,133,1);
 }
 
 
@@ -63,5 +66,10 @@ input {
   padding: 10px;
   font-size: 1.6rem;
 
+}
+.todo-list li:hover {
+  text-decoration: line-through;
+  text-decoration-color: blueviolet;
+  cursor: pointer;
 }
 
